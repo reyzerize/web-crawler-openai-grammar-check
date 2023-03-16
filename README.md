@@ -10,7 +10,7 @@ This is a Node.js script that crawls a website and exports all the URLs found on
 ## Usage
 
 To use the script, run the following command:
-npm start
+`npm start`
 
 `starting_url` is the URL of the website you want to crawl.
 
