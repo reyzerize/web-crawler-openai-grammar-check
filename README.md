@@ -1,44 +1,33 @@
-# OpenAI API Quickstart - Node.js example app
+# Website Crawler
 
-This is an example pet name generator app used in the OpenAI API [quickstart tutorial](https://platform.openai.com/docs/quickstart). It uses the [Next.js](https://nextjs.org/) framework with [React](https://reactjs.org/). Check out the tutorial or follow the instructions below to get set up.
+This is a Node.js script that crawls a website and exports all the URLs found on that website to a CSV file.
 
-![Text box that says name my pet with an icon of a dog](https://user-images.githubusercontent.com/10623307/213887080-b2bc4645-7fdb-4dbd-ae42-efce00d0dc29.png)
+## Installation
 
+1. Clone the repository
+2. Install the dependencies using `npm install`
 
-## Setup
+## Usage
 
-1. If you don’t have Node.js installed, [install it from here](https://nodejs.org/en/) (Node.js version >= 14.6.0 required)
+To use the script, run the following command:
+npm start
 
-2. Clone this repository
+`starting_url` is the URL of the website you want to crawl.
 
-3. Navigate into the project directory
+## Output
 
-   ```bash
-   $ cd openai-quickstart-node
-   ```
+The script exports all the URLs found on the website to a CSV file. The file is named after the domain of the website followed by a timestamp, with a separator. The CSV file is located in the `/export` folder located at the root path.
 
-4. Install the requirements
+Each URL is written on a separate row and column in the CSV file.
 
-   ```bash
-   $ npm install
-   ```
+## Requirements
 
-5. Make a copy of the example environment variables file
+This script requires Node.js version 10 or higher.
 
-   On Linux systems: 
-   ```bash
-   $ cp .env.example .env
-   ```
-   On Windows:
-   ```powershell
-   $ copy .env.example .env
-   ```
-6. Add your [API key](https://platform.openai.com/account/api-keys) to the newly created `.env` file
+## Contributing
 
-7. Run the app
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-   ```bash
-   $ npm run dev
-   ```
+## License
 
-You should now be able to access the app at [http://localhost:3000](http://localhost:3000)! For the full context behind this example app, check out the [tutorial](https://platform.openai.com/docs/quickstart).
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
