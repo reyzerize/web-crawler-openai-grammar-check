@@ -1,0 +1,13 @@
+{
+  "name": "web-crawler",
+  "version": "1.0.0",
+  "description": "A web crawler built with Node.js",
+  "main": "index.js",
+  "dependencies": {
+    "request": "^2.88.2",
+    "cheerio": "^1.0.0-rc.3"
+  },
+  "scripts": {
+    "start": "NODE_ENV=development node index.js"
+  }
+}
